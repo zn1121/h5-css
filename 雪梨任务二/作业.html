@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<meta name="abstract" content="" charset="utf-8"/>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+		<style type="text/css">
+			span{
+				color: red;
+				font-size: 120%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>请填写个人信息</h1>
+		<fieldset>
+			<legend style="color: red;">基本信息</legend>
+			姓名 <input type="text" name="name" placeholder="请输入姓名"/>
+			<span class="aaa">*</span>
+			</br> 	
+			年龄&nbsp;<input type="text" name="age" value="20" />
+		</fieldset>
+		<br />
+		<fieldset>
+			<legend style="color: red;">你想在哪里收到邮件？</legend>
+			邮箱&nbsp;<input type="search" name="email" placeholder="请输入邮箱" list="emailList"/>
+			<span class="aaa">*</span>
+			</br> 	
+			<datalist id="emailList">
+   			 	<option value="123@qq.com">
+    			<option value="123@163.com">
+    			<option value="123@gmail.com">
+    			<option value="123@yahoo.com.cn">
+    			<option value="123@126.com">
+			</datalist>
+		</fieldset>
+		<br />
+		<fieldset>
+			<legend style="color: red;">收入情况</legend>
+			月收入 <select name="">
+				<option value="">
+					<p>20k+&nbsp;&nbsp;&nbsp;</p>
+				</option>
+			</select></br> 	
+			银行卡&nbsp;<input type="text" name="age" value="" />
+			有效期 &nbsp;<input type="date" name="" id="" value="" />
+		</fieldset>
+		<br />
+		<fieldset id="" style="">
+			<legend style="color: red;">选择提交文件</legend>
+			文件&nbsp;<input type="file" value="选择文件" placeholder="&nbsp;未选择任何文件" />
+			<br />
+		</fieldset>
+		<br />
+		<input type="button" name="" id="" value="提交" />
+	</body>
+</html>
+
+
