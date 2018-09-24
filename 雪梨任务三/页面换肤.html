@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>页面换肤</title>
+		<meta name="" content="" charset="utf-8"/>
+		<style type="text/css">
+			button{width: 20px;height: 20px;}
+			.a{width: 200px; height: 100px;background-color: #FF0000;}
+			
+		</style>
+		<script type="text/javascript">
+			function changeColor(str){
+                var body = document.getElementById("a");
+                body.style.backgroundColor = str;
+             }
+			localStorage.setItem("name","changeColor");
+			localStorage.getItem("name");
+			localStorage.name;
+			
+		</script>
+	</head>
+	<body>
+		<span>
+			<button style="background-color: #aaa;" id="grey" onclick="changeColor('#aaa')"></button>
+		</span>
+		<span >
+			<button style="background-color: #66f;" id="blue" onclick="changeColor('blue')"></button>
+		</span>
+		<span >
+			<button style="background-color: #FF0000;" id="red" onclick="changeColor('#f00')"></button>
+		</span>
+		<span >
+			<button style="background-color: #0ff;" id="white" onclick="changeColor('#0ff')"></button>
+		</span>
+		<span >
+			<button style="background-color: #c60;" id="yellow" onclick="changeColor('#c60')"></button>
+		</span>
+		<span >
+			<button style="background-color: #9f0;" id="green" onclick="changeColor('#9f0')"></button>
+		</span>
+		
+		<br />
+		<br />
+		<div id="a" style="background-color: #fff;">LocalStorage将数据保存在客户端本地的硬件设备中，即使浏览器被关闭了，该数据仍然存在，下次打开浏览器访问网站是仍然可以继续使用。</div>
+			
+		
+	</body>
+</html>
